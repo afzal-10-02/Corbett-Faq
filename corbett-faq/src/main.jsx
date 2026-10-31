@@ -9,7 +9,6 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import AdminLayout from "./AdminLayout.jsx";
 import AdminFaq from "./AdminFaq.jsx";
 import UserFaq from "./UserFaq.jsx";
 
@@ -28,12 +27,10 @@ createRoot(document.getElementById("root")).render(
           element={<UserFaq />}
         />
 
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route
-            path="faq"
-            element={<AdminFaq />}
-          />
-        </Route>
+        <Route
+          path="/admin/faq"
+          element={<AdminFaq />}
+        />
 
       </Routes>
     </BrowserRouter>
